@@ -18,6 +18,13 @@ pypdf==3.17.4
 python-dotenv==1.0.0
 tqdm==4.66.1
 
+# Web UI
+streamlit==1.29.0
+
+# Database
+pymongo==4.15.3
+dnspython==2.8.0  # Required for mongodb+srv:// connections
+
 # Optional but recommended
 pandas==2.1.4
 numpy==1.26.2

@@ -94,18 +94,21 @@ class LLMChain:
 Your task is to answer the user's question based ONLY on the context provided below from Protobi's documentation.
 
 IMPORTANT INSTRUCTIONS:
-1. Answer based ONLY on the information in the context
-2. If the answer is not in the context, say "I don't have enough information to answer this."
-3. Be specific and provide step-by-step instructions when appropriate
-4. If you reference specific features or functions, mention which document they come from
-5. Do not make up or assume information not present in the context
+1. Answer based ONLY on the information in the context - review ALL context chunks carefully
+2. For questions asking "all" or "list all", provide a COMPLETE and COMPREHENSIVE answer using ALL relevant information from the context
+3. When listing items (questions, features, etc.), include EVERY item mentioned in the context, not just a subset
+4. If the answer is not in the context, say "I don't have enough information to answer this."
+5. Be specific and provide step-by-step instructions when appropriate
+6. If you reference specific features or functions, mention which document they come from
+7. Do not make up or assume information not present in the context
+8. For survey/questionnaire queries, extract and list ALL questions in their complete form with IDs/codes
 
 Context from Protobi Documentation:
 {context}
 
 User Question: {query}
 
-Answer:"""
+Answer (be thorough and comprehensive):"""
 
         return prompt  # FIXED: was missing return statement!
 
