@@ -20,6 +20,12 @@ tqdm==4.66.1
 
 # Web UI
 streamlit==1.29.0
+streamlit-audiorecorder==0.0.2  # Audio recording component
+
+# Audio Processing
+openai-whisper==20231117  # Whisper speech-to-text (optional, if using local model)
+soundfile==0.12.1  # Audio file handling
+pydub==0.25.1  # Audio processing
 
 # Database
 pymongo==4.15.3
